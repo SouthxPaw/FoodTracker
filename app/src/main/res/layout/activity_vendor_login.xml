@@ -6,6 +6,14 @@
     android:layout_height="match_parent"
     tools:context=".VendorLogin">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/appToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/Theme.AppCompat.Light" />
 
     <FrameLayout
         android:id="@+id/fragment_container"
@@ -25,4 +33,6 @@
         android:layout_marginBottom="0dp">
 
     </FrameLayout>
+
+
 </RelativeLayout>

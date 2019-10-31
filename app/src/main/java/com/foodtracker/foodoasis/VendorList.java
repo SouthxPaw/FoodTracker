@@ -2,6 +2,7 @@ package com.foodtracker.foodoasis;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ActionBar;
 import android.os.Bundle;
 
 public class VendorList extends AppCompatActivity {
@@ -10,5 +11,10 @@ public class VendorList extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_vendor_list);
+
+        //sets up back button
+        ActionBar actionBar = getActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);
+
     }
 }
