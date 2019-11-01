@@ -39,7 +39,7 @@
         <EditText
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:id="@+id/login_student_username"
+            android:id="@+id/login_vendor_email"
             android:layout_marginLeft="100dp"
             android:ems="10"/>
 
@@ -55,7 +55,7 @@
         <EditText
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:id="@+id/student_password"
+            android:id="@+id/vendor_password"
             android:layout_marginLeft="100dp"
             android:ems="10"
             android:inputType="textPassword"/>
@@ -70,18 +70,18 @@
             android:id="@+id/btn_Login"
             android:layout_marginLeft="100dp"/>
 
-        <TextView
+        <Button
             android:autoLink="all"
             android:linksClickable="true"
             android:clickable="true"
             android:layout_height="wrap_content"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:textSize="20dp"
-            android:text="REGISTER HERE"
+            android:text="REGISTER"
             android:layout_marginTop="40dp"
-            android:id="@+id/lnkRegister"
-            android:textColor="#3F51B5"
-            android:gravity="center"/>
+            android:layout_marginStart="100dp"
+            android:id="@+id/btn_Register"
+            android:textColor="#000"/>
 
     </LinearLayout>
 

@@ -9,8 +9,8 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    public Button mUserButton;
-    public Button mVendorButton;
+    private Button mUserButton;
+    private Button mVendorButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,22 +20,30 @@ public class MainActivity extends AppCompatActivity {
     mUserButton = (Button)findViewById(R.id.userButton);
     mVendorButton = (Button)findViewById(R.id.vendorButton);
 
-    mUserButton.setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View view) {
-            Intent intentUser = new Intent(MainActivity.this, VendorList.class);
-            startActivity(intentUser);
-        }
-    });
+        mUserButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                userClicked();
+            }
+        });
 
-    mVendorButton.setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View view) {
-            Intent intentVendor = new Intent(MainActivity.this, VendorLogin.class);
-            startActivity(intentVendor);
-        }
-    });
+        mVendorButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                vendorClicked();
+            }
+        });
 
+    }
+
+    public void userClicked(){
+        Intent intentUser = new Intent(this, VendorList.class);
+        startActivity(intentUser);
+    }
+
+    public void vendorClicked(){
+        Intent intentVendor = new Intent(this, VendorLogin.class);
+        startActivity(intentVendor);
     }
 
 }
